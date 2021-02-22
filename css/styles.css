@@ -250,6 +250,6 @@ footer p {
    ================================================================ */
 @media (min-width: 765px) {
     body {
-        background-color: ;
+        background-color: rgb(224, 224, 224);
     }
 }
