@@ -1,0 +1,255 @@
+/* ===============================================
+                IMPORTED GOOGLE FONTS
+    =============================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+
+/* ===============================================
+                (MOBILE-FIRST) GLOBAL STYLES
+    =============================================== */
+
+body {
+    background-color: rgb(233, 233, 233);
+    font-size: 16px;
+    font-family: 'Merriweather', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.signup p,
+.newsletter p {
+    line-height: 1.4;
+}
+
+.contact,
+.my-form,
+.newsletter {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*  =============================================
+        MOBILE - TEXTAREA HIGHLIGHTS &
+            TRANSITIONS + GLOBAL 
+    ============================================= */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #1a72bb;
+    box-shadow: 0 0 .5rem rgb(8, 92, 92);
+    transition: ease-in 200ms;
+}
+
+
+
+/*  =============================================
+        MOBILE - DOUBLE BORDER + GLOBAL STYLES 
+    ============================================= */
+.top-line {
+    border-top: 4px solid rgb(0, 0, 0);
+}
+
+.bottom-line,
+.newsletter {
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.top-line,
+.bottom-line {
+    margin: .2rem 0rem;
+}
+
+
+/* ==========================================
+            (MOBILE-FIRST) HEADER STYLES
+    ========================================== */
+.top-intro {
+    background-color: #30a2ff;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.top-intro h1 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* ==============================================
+            (MOBILE-FIRST) "SIGN-UP" STYLES
+    ============================================= */
+.signup {
+    padding: 2rem 1.3rem;
+    text-align: center;
+}
+
+.signup h2 {
+    margin-bottom: 1.5rem;
+}
+
+.signup h2,
+.contact h2,
+.newsletter h2 {
+    font-size: 1.2rem;
+}
+
+/* ==============================================
+            (MOBILE-FIRST) "CONTACT" STYLES
+    ============================================= */
+.contact h2,
+.newsletter h2 {
+    padding: 1.5rem 0;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1rem;
+}
+
+input,
+select {
+    background-color: rgb(207, 207, 207);
+    font-size: 1rem;
+    width: 100%;
+    padding: .8rem 1rem;
+    margin: 1rem 0;
+    border: 1px solid #2C3944;
+    border-radius: 5px;
+    text-align: left;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+input:required:invalid,
+input:focus:invalid {
+    border: 2px solid rgb(226, 75, 61);
+}
+
+input:required:valid {
+    border: 2px solid #26f02a;
+}
+
+#zip {
+    display: flex;
+    margin-top: .3rem;
+}
+
+#zip-box {
+    width: 35%;
+    margin-bottom: 1rem;
+}
+
+/* ==============================================
+        (MOBILE-FIRST) "NEWSLETTER" STYLES
+    ============================================= */
+.newsletter {
+    margin: 0;
+    padding: 0 1rem;
+    background-color: rgb(183, 210, 255);
+}
+
+.news-select {
+    display: flex;
+    flex-flow: column;
+}
+
+.newsletter p,
+.news-sub {
+    padding-bottom: 1rem;
+}
+
+.news-select label {
+    display: flex;
+    align-items: center;
+}
+
+#html-cbox,
+#css-cbox,
+#js-cbox,
+#html-radio,
+#text-radio {
+    width: 3%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin: 1rem .7rem 1rem 0;
+    background: #469DF7;
+    transform: scale(1.2);
+}
+
+.news-sub {
+    margin-top: 1rem;
+}
+
+.topics {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#comments {
+    font-family: 'Nunito';
+}
+
+#comments::placeholder {
+    font-size: 1rem;
+    text-align: left;
+}
+
+textarea {
+    width: auto;
+    height: 10rem;
+    border: 1px solid #2C3944;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    height: 3.2rem;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(0, 175, 175);
+    color: #fff;
+}
+
+footer {
+    background-color: #30a2ff;
+    padding: 4rem 0rem;
+}
+
+footer p {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* ===========================================================================
+                                MEDIA QUERY (DESKTOP)
+   =========================================================================== */
+
+/* =================================================================
+            (DESKTOP VIEW) Applied at 960px or wider
+   ================================================================ */
+@media (min-width: 765px) {
+    body {
+        background-color: ;
+    }
+}
