@@ -40,16 +40,16 @@ body {
         MOBILE - TEXTAREA HIGHLIGHTS &
             TRANSITIONS + GLOBAL 
     ============================================= */
-input:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
 textarea:focus,
 select:focus {
     outline: none;
     border: 1px solid #1a72bb;
     box-shadow: 0 0 .5rem rgb(8, 92, 92);
-    transition: ease-in 200ms;
+    transition: 200ms;
 }
-
-
 
 /*  =============================================
         MOBILE - DOUBLE BORDER + GLOBAL STYLES 
@@ -68,7 +68,6 @@ select:focus {
     margin: .2rem 0rem;
 }
 
-
 /* ==========================================
             (MOBILE-FIRST) HEADER STYLES
     ========================================== */
@@ -83,7 +82,6 @@ select:focus {
     text-transform: uppercase;
     text-align: center;
 }
-
 
 /* ==============================================
             (MOBILE-FIRST) "SIGN-UP" STYLES
@@ -117,7 +115,9 @@ fieldset {
     padding-bottom: 1rem;
 }
 
-input,
+input[type=text],
+input[type=email],
+input[type=tel],
 select {
     background-color: rgb(207, 207, 207);
     font-size: 1rem;
@@ -240,16 +240,50 @@ footer p {
     text-align: center;
 }
 
-
 /* ===========================================================================
                                 MEDIA QUERY (DESKTOP)
    =========================================================================== */
 
 /* =================================================================
-            (DESKTOP VIEW) Applied at 960px or wider
+            (DESKTOP VIEW) Applied at 768px or wider
    ================================================================ */
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     body {
-        background-color: rgb(224, 224, 224);
+
+        background-color: rgb(189, 189, 189);
     }
+
+    .wrapper {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .top-intro {
+        width: 100%;
+    }
+
+    .my-form {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: nowrap; */
+        /* justify-content: flex-end; */
+    }
+
+    .main-form {
+        display: flex;
+        flex-direction: colum;
+    }
+
+    .flex-forms {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .flex-forms label {
+        flex-basis: 30%;
+    }
+
+
+
 }
