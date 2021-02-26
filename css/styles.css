@@ -12,7 +12,6 @@
 /* ===============================================
                 (MOBILE-FIRST) GLOBAL STYLES
     =============================================== */
-
 body {
     background-color: rgb(233, 233, 233);
     font-size: 16px;
@@ -21,7 +20,8 @@ body {
 }
 
 .wrapper {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 768px;
 }
 
 .signup p,
@@ -29,11 +29,15 @@ body {
     line-height: 1.4;
 }
 
-.contact,
-.my-form,
+
+.main-form,
 .newsletter {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.sub-head {
+    font-weight: bold;
 }
 
 /*  =============================================
@@ -59,13 +63,13 @@ select:focus {
 }
 
 .bottom-line,
-.newsletter {
+.news-line {
     border-top: 2px solid rgb(0, 0, 0);
 }
 
 .top-line,
 .bottom-line {
-    margin: .2rem 0rem;
+    margin: .2rem 1rem;
 }
 
 /* ==========================================
@@ -96,23 +100,20 @@ select:focus {
 }
 
 .signup h2,
-.contact h2,
-.newsletter h2 {
+.sub-head {
     font-size: 1.2rem;
 }
 
 /* ==============================================
             (MOBILE-FIRST) "CONTACT" STYLES
     ============================================= */
-.contact h2,
-.newsletter h2 {
+.sub-head {
     padding: 1.5rem 0;
 }
 
-fieldset {
+.main-form .flex-forms {
     display: flex;
-    flex-flow: column;
-    padding-bottom: 1rem;
+    flex-direction: column;
 }
 
 input[type=text],
@@ -142,14 +143,8 @@ input:required:valid {
     border: 2px solid #26f02a;
 }
 
-#zip {
-    display: flex;
-    margin-top: .3rem;
-}
-
 #zip-box {
-    width: 35%;
-    margin-bottom: 1rem;
+    max-width: 50%;
 }
 
 /* ==============================================
@@ -163,7 +158,7 @@ input:required:valid {
 
 .news-select {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 }
 
 .newsletter p,
@@ -249,40 +244,43 @@ footer p {
    ================================================================ */
 @media (min-width: 768px) {
     body {
-
         background-color: rgb(189, 189, 189);
     }
 
-    .wrapper {
-        width: 768px;
-        margin: 0 auto;
+    /* ==============================================
+            (DESKTOP) "HEADER" STYLES
+============================================= */
+    .signup p {
+        margin: auto;
+        width: 55%;
     }
 
-    .top-intro {
-        width: 100%;
-    }
-
-    .my-form {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* flex-wrap: nowrap; */
-        /* justify-content: flex-end; */
-    }
-
-    .main-form {
-        display: flex;
-        flex-direction: colum;
-    }
-
-    .flex-forms {
-        display: flex;
+    /* ==============================================
+        (DESKTOP) "FORM" STYLES
+============================================= */
+    .main-form .flex-forms {
         flex-direction: row;
-        align-items: center;
     }
 
-    .flex-forms label {
-        flex-basis: 30%;
+    .main-form input .main-form select {
+        flex-grow: 1;
+        flex-basis: 75%;
     }
+
+    .main-form label {
+        flex-basis: 25%;
+        margin: auto 0;
+    }
+
+    .zip label {
+        flex-basis: 20%;
+    }
+
+    #zip-box {
+        max-width: 30%
+    }
+
+
 
 
 

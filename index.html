@@ -2,8 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
@@ -17,9 +17,6 @@
     </head>
 
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
         <header class="top-intro">
             <h1>The Code Review</h1>
@@ -32,47 +29,42 @@
                 <p>Get the latest news on how your skills are improving right in your inbox</p>
             </section>
 
-            <section class="contact">
-                <hr class="top-line">
-                <hr class="bottom-line">
+            <hr class="top-line">
+            <hr class="bottom-line">
 
-                <h2>
-                    <legend>Contact Information</legend>
-                </h2>
-            </section>
-
-            <section class="my-form">
+            <section>
                 <form action="#" method="post" name="contact-info">
                     <fieldset class="main-form">
-
+                        <legend class="sub-head info">Contact Information</legend>
                         <div class="flex-forms">
-                            <label id="fname" for="fname">Full Name</label>
+                            <label for="fname-box" id="fname">Full Name</label>
                             <input id="fname-box" type="text" name="name" placeholder="Required" required>
                         </div>
 
                         <div class="flex-forms">
-                            <label id="email" for="email">Email Address</label>
+                            <label id="email" for="email-box">Email Address</label>
                             <input id="email-box" type="email" name="email" placeholder="Required" required>
                         </div>
 
                         <div class="flex-forms">
-                            <label id="phone" for="phone">Phone Number</label>
+                            <label id="phone" for="phone-box">Phone Number</label>
                             <input id="phone-box" type="tel" name="phone">
+
                         </div>
 
                         <div class="flex-forms">
-                            <label id="street-addr" for="location">Street Address</label>
+                            <label id="street-addr" for="street-addr-box">Street Address</label>
                             <input id="street-addr-box" type="text" name="address">
                         </div>
 
                         <div class="flex-forms">
-                            <label id="city" for="location">City</label>
+                            <label id="city" for="city-box">City</label>
                             <input id="city-box" type="text" name="city">
                         </div>
 
                         <div class="flex-forms">
-                            <label id="state" for="location">State</label>
-                            <select id="state-dropdown" type="text" name="state" placeholder="Select Your State">
+                            <label id="state" for="state-dropdown">State</label>
+                            <select id="state-dropdown" name="state">
                                 <option value="choose one">Select Your State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -128,50 +120,45 @@
                             </select>
                         </div>
 
-                        <div class="flex-forms">
-                            <label id="zip" for="location">Zip Code</label>
+                        <div class="flex-forms zip">
+                            <label id="zip" for="zip-box">Zip Code</label>
                             <input id="zip-box" type="text" name="zip">
                         </div>
                     </fieldset>
 
-
                 </form>
             </section>
 
+
+
             <section class="newsletter">
-                <h2>
-                    <legend>Newsletter</legend>
-                </h2>
-                <p>Please choose the newsletters you wish to receive:</p>
+                <hr class="news-line">
 
                 <fieldset class="news-select">
+                    <legend class="sub-head">Newsletter</legend>
+                    <p>Please choose the newsletters you wish to receive:</p>
 
-                    <label for="checkbox">
+                    <label for="html-cbox">
                         <input type="checkbox" name="topic" id="html-cbox">HTML News
                     </label>
 
-                    <label for="checkbox">
+                    <label for="css-cbox">
                         <input type="checkbox" name="topic" id="css-cbox">CSS News
                     </label>
 
-                    <label for="checkbox">
+                    <label for="js-cbox">
                         <input type="checkbox" name="topic" id="js-cbox">JavaScript News
                     </label>
 
-
                     <p class="news-sub"> Newsletter Format:</p>
 
-
-                    <label for="html"><input type="radio" name="format" id="html-radio">HTML
+                    <label for="html-radio"><input type="radio" name="format" id="html-radio">HTML
                     </label>
 
-                    <label for="html"><input type="radio" name="format" id="text-radio">Plain text
+                    <label for="text-radio"><input type="radio" name="format" id="text-radio">Plain text
                     </label>
-
 
                     <p class="topics">Other topics you'd like to hear about</p>
-
-                    <!-- set up text area below -->
 
                     <textarea name="comments" id="comments" placeholder="Insert your comments here....."></textarea>
 
@@ -179,13 +166,12 @@
                 </fieldset>
             </section>
 
-
-
         </div>
+
         <footer>
             <p>&copy;2021 The Code Review</p>
         </footer>
-        <script src="" async defer></script>
+
     </body>
 
 </html>
