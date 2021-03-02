@@ -112,6 +112,11 @@ select:focus {
     flex-direction: column;
 }
 
+#fname-box,
+#email-box {
+    background: #f4f6c2;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
